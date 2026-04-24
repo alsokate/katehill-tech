@@ -1,0 +1,165 @@
+<html>
+  <head>
+    <title>whoops</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap');
+      
+      body {
+        font-family: 'DM Sans', sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        background: #fff;
+        color: #111;
+      }
+
+      main {
+        max-width 680px;
+        margin: 6vh auto;
+        padding: 0 5vw;
+      }
+
+      h1 {
+        font-family: Jost, sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1.25;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 17px;
+        margin: 18px 0;
+      }
+
+      a.cite {
+        text-decoration: none;
+        font-size: 0.75em;
+        vertical-align: super;
+      }
+
+      a.cite:hover {
+        text-decoration: underline;
+      }
+
+      ul.examples {
+        padding: 0;
+        list-style: none;
+        margin: 20px 0;
+        font-size: 17px;
+      }
+
+      ul.examples li {
+        padding: 10px 0 10px 1.5em;
+        position: relative;
+      }
+
+      ul.examples li::before {
+        content: '•';
+        font-size: 1.15em;
+        position: absolute;
+        left: 0;
+      }
+
+      .sources {
+        margin-top: 50px;
+        border-top: 1px solid #ddd;
+        padding-top: 20px;
+        font-size: 14px;
+        color: #666;
+      }
+
+      .sources strong {
+        font-size: 15px;
+        color: #444;
+      }
+
+      .sources ol {
+        padding-left: 18px;
+        margin-top: 14px;
+      }
+
+      .sources li {
+        margin-bottom: 10px;
+      }
+
+      .sources a {
+        color: #666;
+      }
+
+      .sources a:hover {
+        color: #111;
+      }
+
+      footer {
+        border-top: 1px solid #ddd;
+        padding: 20px 5vw;
+        text-align: center;
+      }
+ 
+      footer a {
+        font-family: Jost, sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        text-decoration: none;
+        color: #111;
+      }
+ 
+      footer a::before {
+        content: '← ';
+      }
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>So You've Scanned A QR Code From A Stranger</h1>
+
+      <p>Congratulations!  You've found the "nothing bad happened" version of this experience.  Not every mystery QR code is this polite.</p>
+
+      <p>In cybersecurity, we'll obsess over zero-days and spend months hardening systems against sophisticated attacks, but still occasionally find ourselves compromised because somebody clicked, tapped, or scanned the wrong thing.  Research from the Anti-Phishing Working Group and Verizon highlight that recurring theme: a huge percentage of security incidents start with those everyday actions. <a href="#ref1" class="cite">[1]</a><a href="#ref2" class="cite">[2]</a></p>
+
+      <p>QR codes have a particularly sneaky risk profile.  Most of us have developed a reasonable skepticism toward unexpected email links, which is good!  Attackers have noticed this, though, and adapted their tactics.  Malicious QR codes in emails aren't caught with traditional email filtering, and the expanded use of QR codes in real-life situations has introduced a new digital vulnerability in the physical world.  The FTC has explicitly warned that scammers use QR codes specifically because they're harder to inspect than a visible URL. <a href="#ref3" class="cite">[3]</a></p>
+
+      <p>A few real-world examples:</p>
+
+      <ul class="examples">
+      <li>Fake QR code stickers placed on parking meters redirected users to a payment site designed to steal credit card information. <a href="#ref4" class="cite">[4]</a></li>
+
+      <li>Malware campaigns have used QR codes to trick users into downloading malicious apps disguised as legitimate services. <a href="#ref5" class="cite">[5]</a></li>
+
+      <li>Fraudulent tax notices have included QR codes leading to fake government login pages which harvest personal and financial data. <a href="#ref6" class="cite">[6]</a></li>
+
+      <li>Scammers use QR codes to auto-populate cryptocurrency payment fields, making it trivially easy to send funds to the wrong destination. <a href="#ref7" class="cite">[7]</a></li>
+
+      <li>Unsolicited packages have arrived with no return address, containing QR codes designed to extract personal and financial info or download malicious software. <a href="#ref8" class="cite">[8]</a></li>
+
+      </ul>
+
+      <p>An alarming reality, to be sure, but these are definitely not edge cases.  The FTC, CISA, and FBI now explicitly flag QR code phishing as a growing threat vector. <a href="#ref3" class="cite">[3]</a><a href="#ref9" class="cite">[9]</a></p>
+
+      <p>None of this means you have to stop using QR codes or memorize your favorite bar's menu.  They're useful, ubiquitous, and -- in the right hands -- absolutely fine.  They do, however, deserve the same quick pause you already (hopefully) take for an unexpected email link.  Take a moment to check what you're scanning, and be a little more curious before you're a little too trusting.</p>
+
+    <section class="sources">
+      <p><strong>Sources</strong></p>
+      <ol>
+        <li id="ref1">Verizon. 2025 Data Breach Investigations Report. <a href="https://www.verizon.com/business/resources/reports/dbir/">verizon.com</a></li>
+        <li id="ref2">Anti-Phishing Working Group. Phishing Activity Trends Reports. <a href="https://apwg.org/trendsreports/">apwg.org</a></li>
+        <li id="ref3">Federal Trade Commission. Scammers hide harmful links in QR codes to steal your information (Dec. 2023). <a href="https://consumer.ftc.gov/consumer-alerts/2023/12/scammers-hide-harmful-links-qr-codes-steal-your-information">consumer.ftc.gov</a></li>
+        <li id="ref4">NYC Department of Transportation. Parking Meter QR Code Scam Advisory. <a href="https://www.nyc.gov/html/dot/html/pr2025/nyc-dot-issues-parking-meter-scam-advisory.shtml">nyc.gov</a></li>
+        <li id="ref5">KnowBe4. North Korean Threat Actor Spreads Malware via QR Codes. <a href="https://blog.knowbe4.com/north-korean-threat-actor-spreads-malware-via-qr-codes">blog.knowb4.com</a></li>
+        <li id="ref6">The Times. Fake QR codes: the latest scam to avoid <a href="https://www.thetimes.com/money/family-finances/article/first-phishing-now-quishing-dont-fall-for-fake-qr-codes-gl205kwbc">thetimes.com</a></li>
+        <li id="ref7">FBI/IC3. The FBI Warns of Fraudulent Schemes Leveraging Cryptocurrency ATMs and QR Codes to Facilitate Payment (Nov. 2021). <a href="https://www.ic3.gov/PSA/2021/PSA211104">ic3.gov</a></li>
+        <li id="ref8">FBI/IC3. Unsolicited Packages Containing QR Codes Used to Initiate Fraud Schemes (Jul. 2025). <a href="https://www.ic3.gov/PSA/2025/PSA250731">ic3.gov</a></li>
+        <li id="ref9">Cybersecurity and Infrastructure Security Agency. Avoiding Social Engineering and Phishing Attacks. <a href="https://www.cisa.gov/news-events/news/avoiding-social-engineering-and-phishing-attacks">cisa.gov</a></li>
+      </ol>
+    </section>
+    </main>
+    <footer>
+      <a href="index.html">Come visit me at katehill.tech!</a>
+    </footer>
+  </body>
+</html>
